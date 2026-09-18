@@ -5,14 +5,28 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Future forge website</title>
 		<link rel="stylesheet" href="style.css" />
+
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+		<style type="text/tailwindcss">
+			@theme {
+				--color-clifford: #da373d;
+
+			}
+		</style>
 	</head>
-	<body>
-        <div class="container">
-            <div class="item item1">1</div>
-            <div class="item item2">2</div>
-            <div class="item item3">3</div>
-            <div class="item item4">4</div>
-            <div class="item item5">5</div>
-        </div>
+	<body class="bg-green-300 md:bg-blue-300 lg:bg-red-300 max-[300px]:bg-yellow-300">
+		<h1 class="text-3xl font-bold underline text-[#da373d] lg:hidden">Hello world!</h1>
+
+        <button class="text-blue-500 bg-blue-100 px-4 py-3 rounded-full lg:rounded-none text-2xl lg:text-5xl">deploy me</button>
+
+		<div class="container p-[5px] h-[500px] grid gap-x-2.5 gap-y-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
+
+			<div class="item bg-purple-500 lg:col-span-2">1</div>
+			<div class="item bg-gray-700">2</div>
+			<div class="item bg-white lg:row-span-2">3</div>
+			<div class="item bg-white">4</div>
+			<div class="item bg-black text-white lg:col-span-2">5</div>
+		</div>
 	</body>
 </html>
